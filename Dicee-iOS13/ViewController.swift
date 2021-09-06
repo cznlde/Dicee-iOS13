@@ -19,8 +19,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func ButtonRollDices(_ sender: UIButton) {
-        diceImageViewLeft.image = #imageLiteral(resourceName: "DiceSix")
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        print("Ahoj")
+        diceImageViewLeft.image = #imageLiteral(resourceName: "DiceSix") // image Literar -> met muis klikken en een plaatje kiezen
+        diceImageViewRight.alpha = 0.5 // doorzichtigheid
+        diceImageViewRight.image = #imageLiteral(resourceName: "DiceThree")
+        
+        
     }
     
 }
